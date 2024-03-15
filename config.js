@@ -1,8 +1,8 @@
 exports = module.exports = {
   logging: true,
   server: {
-    secure: true, // false=ws, true=wss
-    port: 8001,
+    secure: false, // false=ws, true=wss
+    port: 8000,
     host: '0.0.0.0'
   },
   sequelize: {
