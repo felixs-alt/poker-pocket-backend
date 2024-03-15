@@ -18,7 +18,7 @@ RUN mv -f HandRanks.dat ./src/app/
 
 # Replace config with prod
 RUN mv -f config-prod.js config.js
-
+EXPOSE 8000
 EXPOSE 8001
 EXPOSE 8000
 
