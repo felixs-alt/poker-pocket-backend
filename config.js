@@ -6,7 +6,7 @@ exports = module.exports = {
     host: '0.0.0.0'
   },
   sequelize: {
-    logging: false,
+    logging: true,
   },
   common: {
     startGameTimeOut: 3000,     // 2000 stock
