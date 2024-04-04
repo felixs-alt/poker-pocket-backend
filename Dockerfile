@@ -21,5 +21,5 @@ RUN mv -f config-prod.js config.js
 EXPOSE 8000
 EXPOSE 8001
 # define the command to run your app using CMD which defines your runtime
-CMD [ "node", "holdem.js"]
+CMD [ "nodemon", "holdem.js"]
 
