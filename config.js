@@ -1,12 +1,12 @@
 exports = module.exports = {
   logging: true,
   server: {
-    secure: false, // false=ws, true=wss
+    secure: true, // false=ws, true=wss
     port: 8000,
     host: '0.0.0.0'
   },
   sequelize: {
-    logging: true,
+    logging: false,
   },
   common: {
     startGameTimeOut: 3000,     // 2000 stock
