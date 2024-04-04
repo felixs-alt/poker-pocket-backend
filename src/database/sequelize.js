@@ -19,7 +19,6 @@ const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, pr
     min: 0,
     idle: 10000
   },
-  ssl: true,
   logging: function (str) {
     if (config.sequelize.logging) {
       console.log(str);
