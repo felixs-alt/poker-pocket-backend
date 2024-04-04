@@ -6,7 +6,7 @@ dotEnv.config();
 
 async function initDatabase() {
   try {
-    pgTools.createdb({
+    await pgTools.createdb({
       user: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
       port: process.env.DB_PORT,
