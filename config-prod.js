@@ -1,7 +1,7 @@
 exports = module.exports = {
   logging: true,
   server: {
-    secure: true, // false=ws, true=wss
+    secure: false, // false=ws, true=wss
     port: 8001,
     host: '0.0.0.0'
   },
