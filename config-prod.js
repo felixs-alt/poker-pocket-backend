@@ -6,14 +6,14 @@ exports = module.exports = {
     host: '0.0.0.0'
   },
   sequelize: {
-    logging: true,
+    logging: false,
   },
   common: {
     startGameTimeOut: 3000,     // 2000 stock
-    startingRooms: 1,          // Default 4, How many rooms to create at start
-    roomZeroBotCount: 5,
-    roomOneBotCount: 2,
-    roomTwoBotCount: 2,
+    startingRooms: 4,           // Default 4, How many rooms to create at start
+    roomZeroBotCount: 3,
+    roomOneBotCount: 1,
+    roomTwoBotCount: 4,
     roomOthersBotCount: 0,      // For production set to 0
   },
   neuralNetwork: {
@@ -44,7 +44,7 @@ exports = module.exports = {
           minPlayers: 2,
           turnCountdown: 20,
           minBet: 10,
-          afterRoundCountdown: 10
+          afterRoundCountdown: 12
         },
         {
           name: 'Texas Hold\'em with medium bets',
@@ -53,7 +53,7 @@ exports = module.exports = {
           minPlayers: 2,
           turnCountdown: 20,
           minBet: 100,
-          afterRoundCountdown: 10
+          afterRoundCountdown: 12
         },
         {
           name: 'Texas Hold\'em with high bets',
@@ -62,7 +62,7 @@ exports = module.exports = {
           minPlayers: 2,
           turnCountdown: 20,
           minBet: 1000,
-          afterRoundCountdown: 10
+          afterRoundCountdown: 12
         }
       ],
     },
